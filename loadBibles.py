@@ -37,7 +37,7 @@ if __name__ == "__main__":
     
     def chooseversion():
         while True:
-            s = raw_input("Enter version: (l to list versions, can also enter comma "
+            s = input("Enter version: (l to list versions, can also enter comma "
                       "separated to compare, all for all versions)  ")
             if s == "l":
                 print("bible version list")
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     blist = chooseversion()
 
     while True:
-        s = raw_input("> ")
+        s = input("> ")
         if s in exitwords:
             print("Exit.")
             break
